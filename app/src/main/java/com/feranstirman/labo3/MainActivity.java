@@ -13,14 +13,23 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Button mButton;
+    private Button mButton, mButtonShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mButton = findViewById(R.id.b1);
+        mButton = findViewById(R.id.send);
+        mButtonShare = findViewById(R.id.share);
+
+        mButtonShare.setOnClickListener(v->{
+            Intent mIntent  = new Intent();
+            mIntent.setAction(Intent.ACTION_SEND);
+            mIntent.setType("text/plain");
+            mIntent.putExtra(Intent.EXTRA_TEXT, "ffwcSHBFW");
+            startActivity(mIntent);
+        });
 
         mButton.setOnClickListener(v-> {
             Intent mIntent = new Intent(MainActivity.this, newActivity.class);

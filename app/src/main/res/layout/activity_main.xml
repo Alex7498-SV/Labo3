@@ -8,12 +8,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
         android:textSize="24sp"
         android:textColor="#FFFF"
+        />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="share"
+        android:textSize="24sp"
+        android:textColor="#FFFF"
+
         />
 
 </LinearLayout>

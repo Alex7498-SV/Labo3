@@ -16,7 +16,7 @@ public class newActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
 
-        mTv1 = findViewById(R.id.t1);
+        mTv1 = findViewById(R.id.textV1);
 
         Intent mIntent = this.getIntent();
 
